@@ -11,18 +11,19 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/images/favarcane.png">
+    <script src="assets/modal.js" defer></script>
     <title>Intégration Kaliop</title>
 </head>
 
 <body>
     <!-- {# logo, search, etc. #} -->
-    <header>
-        <nav>
+    <header role="banner">
+        <nav role="navigation" aria-label="menu-de-navigation">
             <h2>
                 Test technique intégrateur web
             </h2>
         </nav>
-        <div class="container" id="contbanner">
+        <div class="Banner-container" id="contbanner">
             <img id="banner" src="assets/images/banner.jpg" alt="bannière_arcane">
             <h1 class="title" id="title">
                 ARCANE
@@ -33,7 +34,7 @@
         </div>
     </header>
     <!-- {# page’s main content #} -->
-    <main>
+    <main role="main">
         <!-- Zone texte -->
         <section id="texte_libre">
             <div class="text1">
@@ -70,20 +71,20 @@
         <!-- Blocs alignés -->
         <section id="blocs">
             <div id="bloc1">
-                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=OweSahDkNtI">
-                    <img id="pic1" src="assets/images/bloc1.jpg" alt="">
+                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=OweSahDkNtI" aria-label="Ouvrir la video 1 dans un nouvel onglet">
+                    <img id="pic1" src="assets/images/bloc1.jpg" alt="image bande annonce d'Arcane">
                     <h3>Saison 1 (Bande-annonce) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
                 </a>
             </div>
             <div id="bloc2">
-                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=DNwDWXTDukY">
-                    <img id="pic2" src="assets/images/bloc2.jpg" alt="">
+                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=DNwDWXTDukY" aria-label="Ouvrir la video 1 dans un nouvel onglet">
+                    <img id="pic2" src="assets/images/bloc2.jpg" alt="image 2 bande annonce d'Arcane">
                     <h3>Saison 1 (Teaser 2) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
                 </a>
             </div>
             <div id="bloc3">
-                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=L5und4QIXQ0&t=1s">
-                    <img id="pic3" src="assets/images/bloc3.jpg" alt="">
+                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=L5und4QIXQ0&t=1s" aria-label="Ouvrir la video 1 dans un nouvel onglet">
+                    <img id="pic3" src="assets/images/bloc3.jpg" alt="image 2 bande annonce d'Arcane">
                     <h3>Arcane | Bande-annonce finale <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
                     
                 </a>
@@ -107,11 +108,10 @@
         </section>
     </main>
     <!-- {# more info about the site, links, etc. #} -->
-    <footer>
+    <footer role="contentinfo">
         <div class="copyright">
             <h4>Copyright &copy; 2021</h4>
         </div>
     </footer>
-    <script src="assets/modal.js"></script>
 </body>
 </html>
