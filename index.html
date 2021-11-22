@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/modal.css">
+    <!-- ionicons pour bouton modal fermer -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Intégration Kaliop</title>
+</head>
+
+<body>
+    <!-- {# logo, search, etc. #} -->
+    <header>
+        <nav>
+            <h1>
+                Test technique intégrateur web
+            </h1>
+        </nav>
+        <div class="container" id="contbanner">
+            <img id="banner" src="assets/images/banner.jpg" alt="bannière_arcane">
+            <h1 class="title" id="title">
+                ARCANE
+            </h1>
+            <h2 class="title" id="subtitle">
+                Une série Netflix
+            </h2>
+        </div>
+    </header>
+    <!-- {# page’s main content #} -->
+    <main>
+        <!-- Zone texte -->
+        <section id="texte_libre">
+            <div class="text1">
+                <h2>
+                    Synopsis d'Arcane :
+                </h2>
+                <p>
+                    Arcane se déroule dans le monde de Runeterra, l'univers fictif dans lequel prennent place les
+                    différents
+                    jeux Riot games (League of legends), et plus précisément à Piltover et Zaun, deux villes que tout oppose, situées
+                    au
+                    même endroit. Piltover est la partie supérieure et très aisée de la cité, quand Zaun représente ses
+                    souterrains insalubres, où la population vit pauvre et affamée.<br />Le scénario de la série suit
+                    Jinx
+                    et Vi, deux sœurs ayant vécu (ou plutôt survécu) dans des conditions difficiles à Zaun et qui,
+                    désormais
+                    adultes, mènent une vie très différente l'une de l'autre.
+                </p>
+            </div>
+            <div class="text2">
+                <h2>
+                    Qu'est-ce qu'Arcane ?
+                </h2>
+                <p>
+                    Arcane est une série télévisée d'animation américaine produite par Riot Games. Animée par Fortiche
+                    Production, un studio d'animation français, la série est révélée en octobre 2019 et diffusée
+                    internationalement sur Netflix depuis le 6 novembre.
+                    Après 5 ans d'attente, les fans de League of Legends et ceux des séries animées Netflix ont réussi à
+                    se mettre d'accord sur un point : la série animée Arcane basée sur le jeu de Riot Games est une
+                    totale réussite.
+                </p>
+            </div>
+        </section>
+        <!-- Blocs alignés -->
+        <section id="blocs">
+            <div id="bloc1">
+                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=OweSahDkNtI">
+                    <img id="pic1" src="assets/images/bloc1.jpg" alt="">
+                    <h3>Saison 1 (Bande-annonce) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
+                </a>
+            </div>
+            <div id="bloc2">
+                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=DNwDWXTDukY">
+                    <img id="pic2" src="assets/images/bloc2.jpg" alt="">
+                    <h3>Saison 1 (Teaser 2) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
+                </a>
+            </div>
+            <div id="bloc3">
+                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=L5und4QIXQ0&t=1s">
+                    <img id="pic3" src="assets/images/bloc3.jpg" alt="">
+                    <h3>Arcane | Bande-annonce finale <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
+                    
+                </a>
+            </div>
+        </section>
+        <!-- Pop-in -->
+        <section id="popin">
+            <button id="buttonmodal" data-modal-target="#modal">En savoir plus</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">Arcane Saison 2</div>
+                    <button data-close-button class="close-button">
+                        <ion-icon name="close-circle"></ion-icon>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Le studio français derrière la série Arcane porte bien son nom.<br/> Fortiche a réussi à recréer l'ambiance de deux des villes emblématiques du jeu League of Legends et a réunir fans du jeu et néophytes autour d'une même bannière. Presque tout le monde a encensé la première saison de la série, et c'est donc tout naturellement qu'une <a id="links2" target="_blank" href="https://www.youtube.com/watch?v=Nu9HTOIUxLk">saison 2 a été mise sur les rails.</a><br>Les fans étaient évidemment au rendez-vous et tous semblent avoir leur mot à dire sur les événements qui la constitueront.
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </section>
+    </main>
+    <!-- {# more info about the site, links, etc. #} -->
+    <footer>
+        <div class="copyright">
+            <h4>Copyright &copy; 2021</h4>
+        </div>
+    </footer>
+</body>
+<script src="assets/modal.js"></script>
+
+</html>
