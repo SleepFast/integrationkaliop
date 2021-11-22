@@ -145,13 +145,13 @@
   #buttonmodal{
     font-size: 3rem;
     width: 100%;
-    margin:10px 1vh 10px 1vh;
+    margin:20px 1vh 30px 1vh;
   }
 
   #buttonmodal:hover{
     font-size: 3rem;
     width: 100%;
-    margin:10px 1vh 10px 1vh;
+    margin:20px 1vh 30px 1vh;
   }
 
   .modal {
@@ -167,13 +167,13 @@
   #buttonmodal{
     font-size: 3rem;
     width: 100%;
-    margin:10px 10vh 10px 10vh;
+    margin:30px 10vh 40px 10vh;
   }
 
   #buttonmodal:hover{
     font-size: 3rem;
     width: 100%;
-    margin:10px 10vh 10px 10vh;
+    margin:30px 10vh 40px 10vh;
   }
 
   .modal {
