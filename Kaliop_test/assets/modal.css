@@ -1,0 +1,186 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 600px;
+  max-width: 80%;
+}
+
+#popin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttonmodal{
+  background-color: #181818;
+  border-color: #ffffff;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 3rem;
+  width: 100%;
+  margin: 30px 20vh 40px 20vh;
+  transition-duration: 0.2s;
+}
+
+#buttonmodal:hover{
+  cursor: pointer;
+  background-color: #ffffff;
+  border-color: #181818;
+  color: #181818;
+}
+
+#buttonmodal:active{
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+  transition-duration: 0.2s;
+}
+
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 95%;
+  display: flex;
+  align-items: center;
+}
+
+.modal-header .close-button:hover ion-icon {
+	-webkit-transform: rotateZ(360deg);
+	transform: rotateZ(360deg);
+	transition-duration: 0.9s;
+  color: red;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#links2{
+  text-decoration: none;
+  color: #ffd700;
+  filter: drop-shadow(0 0 0.1em rgba(0,0,0,.9));
+}
+#links2:hover{
+  background-color: black;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+#links2:active{
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+@media screen and (max-width : 576px){
+  #buttonmodal{
+    font-size: 2rem;
+    width: 100%;
+    margin:10px 0 10px 0;
+  }
+
+  #buttonmodal:hover{
+    font-size: 2rem;
+    width: 100%;
+    margin:10px 0 10px 0;
+  }
+
+  .modal {
+    width: 400px;
+  }
+
+  .modal-header .close-button {
+    margin-left: 90%;
+  }
+}
+@media screen and (max-width : 577px){
+  #buttonmodal{
+    font-size: 3rem;
+    width: 100%;
+    margin:20px 1vh 30px 1vh;
+  }
+
+  #buttonmodal:hover{
+    font-size: 3rem;
+    width: 100%;
+    margin:20px 1vh 30px 1vh;
+  }
+
+  .modal {
+    width: 500px;
+  }
+
+  .modal-header .close-button {
+    margin-left: 90%;
+  }
+}
+
+@media screen and (min-width : 577px) and (max-width:1359px){
+  #buttonmodal{
+    font-size: 3rem;
+    width: 100%;
+    margin:30px 10vh 40px 10vh;
+  }
+
+  #buttonmodal:hover{
+    font-size: 3rem;
+    width: 100%;
+    margin:30px 10vh 40px 10vh;
+  }
+
+  .modal {
+    width: 600px;
+  }
+
+  .modal-header .close-button {
+    margin-left: 90%;
+  }
+}
