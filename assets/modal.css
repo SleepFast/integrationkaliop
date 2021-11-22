@@ -29,7 +29,7 @@
   border-radius: 20px;
   font-size: 3rem;
   width: 100%;
-  margin:10px 20vh 10px 20vh;
+  margin: 30px 20vh 40px 20vh;
   transition-duration: 0.2s;
 }
 
@@ -38,10 +38,6 @@
   background-color: #ffffff;
   border-color: #181818;
   color: #181818;
-  border-radius: 20px;
-  font-size: 3rem;
-  width: 100%;
-  margin:10px 20vh 10px 20vh;
 }
 
 #buttonmodal:active{
