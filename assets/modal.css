@@ -15,7 +15,7 @@
   width: 600px;
   max-width: 80%;
   max-height: 90%;
-  overflow-y: scroll;
+  overflow: overlay;
 }
 
 #popin{
