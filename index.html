@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/Bloc.css">
     <link rel="stylesheet" href="assets/modal.css">
+    <link rel="stylesheet" href="assets/Banner.css">
     <!-- ionicons pour bouton modal fermer -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -23,12 +25,12 @@
                 Test technique intégrateur web
             </h2>
         </nav>
-        <div class="Banner-container" id="contbanner">
-            <img id="banner" src="assets/images/banner.jpg" alt="bannière_arcane">
-            <h1 class="title" id="title">
+        <div class="Banner">
+            <img class="Banner-img" src="assets/images/banner.jpg" alt="bannière_arcane">
+            <h1 class="Banner-title">
                 ARCANE
             </h1>
-            <h2 class="title" id="subtitle">
+            <h2 class="Banner-title">
                 Une série Netflix
             </h2>
         </div>
@@ -36,7 +38,7 @@
     <!-- {# page’s main content #} -->
     <main role="main">
         <!-- Zone texte -->
-        <section id="texte_libre">
+        <section class="texte_libre">
             <div class="text1">
                 <h2>
                     Synopsis d'Arcane :
@@ -69,23 +71,23 @@
             </div>
         </section>
         <!-- Blocs alignés -->
-        <section id="blocs">
-            <div id="bloc1">
-                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=OweSahDkNtI" aria-label="Ouvrir la video 1 dans un nouvel onglet">
-                    <img id="pic1" src="assets/images/bloc1.jpg" alt="image bande annonce d'Arcane">
-                    <h3>Saison 1 (Bande-annonce) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
+        <section class="blocs">
+            <div class="Bloc Bloc-1">
+                <a class="Bloc-link" target="_blank" href="https://www.youtube.com/watch?v=OweSahDkNtI" aria-label="Ouvrir la video 1 dans un nouvel onglet">
+                    <img class="Bloc-img" id="pic1" src="assets/images/bloc1.jpg" alt="image bande annonce d'Arcane">
+                    <h3 class="Bloc-title">Saison 1 (Bande-annonce) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
                 </a>
             </div>
-            <div id="bloc2">
-                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=DNwDWXTDukY" aria-label="Ouvrir la video 1 dans un nouvel onglet">
-                    <img id="pic2" src="assets/images/bloc2.jpg" alt="image 2 bande annonce d'Arcane">
-                    <h3>Saison 1 (Teaser 2) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
+            <div class="Bloc Bloc-2">
+                <a class="Bloc-link" target="_blank" href="https://www.youtube.com/watch?v=DNwDWXTDukY" aria-label="Ouvrir la video 1 dans un nouvel onglet">
+                    <img class="Bloc-img" id="pic2" src="assets/images/bloc2.jpg" alt="image 2 bande annonce d'Arcane">
+                    <h3 class="Bloc-title">Saison 1 (Teaser 2) : Arcane <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
                 </a>
             </div>
-            <div id="bloc3">
-                <a class="teaser" target="_blank" href="https://www.youtube.com/watch?v=L5und4QIXQ0&t=1s" aria-label="Ouvrir la video 1 dans un nouvel onglet">
-                    <img id="pic3" src="assets/images/bloc3.jpg" alt="image 3 bande annonce d'Arcane">
-                    <h3>Arcane | Bande-annonce finale <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
+            <div class="Bloc Bloc-3">
+                <a class="Bloc-link" target="_blank" href="https://www.youtube.com/watch?v=L5und4QIXQ0&t=1s" aria-label="Ouvrir la video 1 dans un nouvel onglet">
+                    <img class="Bloc-img" id="pic3" src="assets/images/bloc3.jpg" alt="image 3 bande annonce d'Arcane">
+                    <h3 class="Bloc-title">Arcane | Bande-annonce finale <ion-icon   class="play" name="play-circle-outline"></ion-icon></h3>
                     
                 </a>
             </div>
@@ -95,7 +97,7 @@
             <button id="buttonmodal" data-modal-target="#modal">En savoir plus</button>
             <div class="modal" id="modal">
                 <div class="modal-header">
-                    <div class="title">Arcane Saison 2</div>
+                    <div class="modal-title">Arcane Saison 2</div>
                     <button data-close-button class="close-button">
                         <ion-icon name="close-circle"></ion-icon>
                     </button>

@@ -1,0 +1,51 @@
+.Banner-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+* .Banner-title{
+    position: absolute;
+    color: #ffd700;
+    filter: drop-shadow(0 0 0.1em rgba(0,0,0,.9));
+}
+
+h1.Banner-title{
+    font-size: 5rem;
+    top:25%;
+    left:10%;
+}
+
+h2.Banner-title{
+    top:35%;
+    left:10%;
+}
+
+@media screen and (max-width : 576px){
+    
+    h1.Banner-title{
+        font-size: 3rem;
+        top:8%;
+        left:10%;
+    }
+    
+    h2.Banner-title{
+        top:15%;
+        left:10%;
+    }
+}
+
+@media screen and (min-width : 577px) and (max-width:1359px){
+       
+    h1.Banner-title{
+        font-size: 4rem;
+        top:16%;
+        left:10%;
+    }
+    
+    h2.Banner-title{
+        top:25%;
+        left:10%;
+    }
+}
